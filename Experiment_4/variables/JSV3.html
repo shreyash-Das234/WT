@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2><span style="color: blue;">Redeclaring a Variable Using</span> <span style="color: red;">constant</span></h2>
+<h1 id="demo_const1">->></h1> <br>
+<h1 id="demo_const2">->></h1> <br>
+<h1 id="demo_const3">->></h1> 
+
+<script>
+
+{
+ const PI = 10;
+ //PI = 20;   
+  document.getElementById("demo_const1").innerHTML = PI*4;
+}
+
+
+try {
+  const PI = 30;
+  //PI = 20; 
+   
+}
+catch (err) {
+  document.getElementById("demo_const2").innerHTML = err;
+ }
+ finally{
+ document.getElementById("demo_const3").innerHTML = 10;
+ }
+
+</script>
+<br>
+<p>try{} statement: <br>Here, the code which needs possible error testing is kept within the try block. <br>In case any error occur, it passes to the catch{} block for taking suitable actions and handle the error. <br>Otherwise, it executes the code written within.</p>
+<p>
+catch{} statement: <br>This block handles the error of the code by executing the set of statements written within the block. <br>This block contains either the user-defined exception handler or the built-in handler. This block executes only when any error-prone code needs to be handled in the try block.<br> Otherwise, the catch block is skipped.</p> 
+</body>
+</html>

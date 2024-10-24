@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Tutorial</title>
+
+<style>
+th, td {
+  border: 1px solid;
+  text-align: center;
+  height: 40px;
+  vertical-align: bottom;
+  padding: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+table {
+    width: 60%;
+    border-collapse: collapse;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+
+
+<script>
+function AddCellValues1() {
+let a=0;
+let b=0;
+    var table = document.getElementById('mytable');
+    for (var r = 1, n = table.rows.length-2; r < n; r++) {
+          a = a + Number(table.rows[r].cells[0].innerHTML);
+          b = a/(n-1);
+   }
+   document.getElementById("ans1").innerHTML = a;
+   document.getElementById("avg1").innerHTML = b;
+}
+
+
+
+function AddCellValues2() {
+let a=0;
+let b=0;
+    var table = document.getElementById('mytable');
+    for (var r = 1, n = table.rows.length-2; r < n; r++) {
+          a = a + Number(table.rows[r].cells[1].innerHTML);
+          b = a/(n-1);
+   }
+   document.getElementById("ans2").innerHTML = a;
+   document.getElementById("avg2").innerHTML = b;
+}
+
+
+
+function AddCellValues3() {
+let a=0;
+let b=0;
+    var table = document.getElementById('mytable');
+    for (var r = 1, n = table.rows.length-2; r < n; r++) {
+          a = a + Number(table.rows[r].cells[2].innerHTML);
+          b = a/(n-1);
+   }
+   document.getElementById("ans3").innerHTML = a;
+   document.getElementById("avg3").innerHTML = b;
+}
+
+
+
+function AddCellValues4() {
+let a=0;
+let b=0;
+    var table = document.getElementById('mytable');
+    for (var r = 1, n = table.rows.length-2; r < n; r++) {
+          a = a + Number(table.rows[r].cells[3].innerHTML);
+          b = a/(n-1);
+   }
+   document.getElementById("ans4").innerHTML = a;
+   document.getElementById("avg4").innerHTML = b;
+}
+
+
+</script>
+</head>
+<body onload="AddCellValues1()">
+
+<h1>JS - Adding table elements</h1>
+<table id="mytable">
+	<tbody>
+		<tr>
+			<th >On Load</th>
+			<th >On Click</th>
+			<th >Onmouse Over</th>
+			<th >Onmouse Out</th>
+		</tr>
+		<tr>
+			<td >100</td>
+			<td >23</td>
+			<td >55</td>
+			<td >85</td>
+		</tr>
+		<tr>
+			<td >15</td>
+			<td >20</td>
+			<td >50</td>
+			<td >10</td>
+		</tr>
+		<tr>
+			<td >15</td>
+			<td >20</td>
+			<td >50</td>
+			<td >10</td>
+		</tr>
+		<tr>
+			<td >100</td>
+			<td >23</td>
+			<td >55</td>
+			<td >85</td>
+		</tr>
+		<tr>
+			<td >15</td>
+			<td >20</td>
+			<td >50</td>
+			<td >10</td>
+		</tr>
+		<tr>
+			<td id="ans1" bgcolor="#FFFFCC">&nbsp;</td>
+			<td onclick="AddCellValues2()" id="ans2" bgcolor="#CCF5FF">&nbsp;</td>
+			<td onmouseover="AddCellValues3()" id="ans3" bgcolor="#E8CCFF">&nbsp;</td>
+			<td onmouseout="AddCellValues4()" id="ans4" bgcolor="#EAFFCC">&nbsp;</td>
+		</tr>
+   		<tr>
+			<td id="avg1" bgcolor="#FFFFCC">&nbsp;</td>
+			<td onclick="AddCellValues2()" id="avg2" bgcolor="#CCF5FF">&nbsp;</td>
+			<td onmouseover="AddCellValues3()" id="avg3" bgcolor="#E8CCFF">&nbsp;</td>
+			<td onmouseout="AddCellValues4()" id="avg4" bgcolor="#EAFFCC">&nbsp;</td>
+		</tr>
+
+	</tbody>
+</table>
+
+</body>
+</html>

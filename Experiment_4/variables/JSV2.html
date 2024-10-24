@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2><span style="color: blue;">Redeclaring a Variable Using</span> <span style="color: red;">let</span></h2>
+<h1 id="demo_let1"></h1> <br>
+<h1 id="demo_let2"></h1> <br>
+<h1 id="demo_let3"></h1> <br>
+
+<h1 id="demo_let4"></h1> 
+
+<script>
+function myFunction1(p1, p2) {
+  return p1 * p2;
+}
+
+function myFunction2(p1, p2) {
+  return p1 * p2;
+}
+
+function myFunction3(p1, p2) {
+  p1 = 4
+  p2 = 5
+  return p1 * p2;
+}
+
+
+function myFunction4(p1, p2) {
+  return p1 * p2;
+}
+
+
+let x1 = 10
+let y1 = 3
+document.getElementById("demo_let1").innerHTML = myFunction1(x1, y1);
+
+let x2 = 20
+let y2 = 5
+//let x2 = 20
+document.getElementById("demo_let2").innerHTML = myFunction2(x2, y2);
+
+let x3 = 20
+let y3 = 15
+document.getElementById("demo_let3").innerHTML = myFunction3(x3, y3);
+
+
+{
+let x3 = 20
+let y3 = 15
+}
+
+{
+let x3 = 3
+let y3 = 54
+document.getElementById("demo_let4").innerHTML = myFunction4(x3, y3);
+}
+
+</script>
+
+</body>
+</html>

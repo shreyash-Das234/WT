@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script>
+  function newImg_fb(e){
+    e.src = "fb2.png"
+  }
+  function oldImg_fb(e){
+    e.src = "fb1.png"
+  }
+  function newImg_tw(e){
+    e.src = "tw2.png"
+  }
+  function oldImg_tw(e){
+    e.src = "tw1.png"
+  }
+  function newImg_yt(e){
+    e.src = "yt2.png"
+  }
+  function oldImg_yt(e){
+    e.src = "yt1.png"
+  }
+  function newImg_in(e){
+    e.src = "in2.png"
+  }
+  function oldImg_in(e){
+    e.src = "in1.png"
+  }
+</script>
+</head>
+
+<body>
+<h1> No Image Sprites used </h1>
+<a href="https://www.facebook.com/">
+<img src="fb1.png" onmouseover="newImg_fb(this)" onmouseout="oldImg_fb(this)"></a>
+
+<a href="https://twitter.com/">
+<img src="tw1.png" onmouseover="newImg_tw(this)" onmouseout="oldImg_tw(this)"></a>
+
+<a href="https://www.youtube.com/">
+<img src="yt1.png" onmouseover="newImg_yt(this)" onmouseout="oldImg_yt(this)"></a>
+
+<a href="https://www.instagram.com/accounts/login/">
+<img src="in1.png" onmouseover="newImg_in(this)" onmouseout="oldImg_in(this)"></a>
+</body>
+</html>

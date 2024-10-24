@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<h2><span style="color: blue;">Exception Handling</span> </h2>
+<script>
+try{  
+var a= ["34","32","5","31","24","44","67"]; //a is an array  
+document.write(a);    // displays elements of a  
+document.write(b); //b is undefined but still trying to fetch its value. Thus catch block will be invoked  
+}
+
+catch(e){  
+document.write("<br>There is error which shows "+e.message);
+alert("There is error which shows "+e.message); //Handling error  
+} 
+</script>
+
+<br>
+<p>try{} statement: <br>Here, the code which needs possible error testing is kept within the try block. <br>In case any error occur, it passes to the catch{} block for taking suitable actions and handle the error. <br>Otherwise, it executes the code written within.</p>
+<p>
+catch{} statement: <br>This block handles the error of the code by executing the set of statements written within the block. <br>This block contains either the user-defined exception handler or the built-in handler. This block executes only when any error-prone code needs to be handled in the try block.<br> Otherwise, the catch block is skipped.</p> 
+</body>
+</html> 
