@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#navlist {
+  position: relative;
+  left: 350px;
+}
+
+#navlist li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+}
+
+#navlist li, #navlist a {
+  height: 100px;
+  display: block;
+}
+
+#facebook {
+  left: 0px;
+  width: 105px;
+  background: url('social-icons-sprite.png') 0 0;
+}
+
+#facebook a:hover {
+  background: url('social-icons-sprite.png') 0 -110px;
+}
+
+#twitter {
+  left: 105px;
+  width: 105px;
+  background: url('social-icons-sprite.png') -105px 0;
+}
+
+#twitter a:hover {
+  background: url('social-icons-sprite.png') -105px -110px;
+}
+
+#youtube {
+  left: 210px;
+  width: 105px;
+  background: url('social-icons-sprite.png') -210px 0;
+}
+
+#youtube a:hover {
+  background: url('social-icons-sprite.png') -210px -110px;
+}
+
+#instagram {
+  left: 315px;
+  width: 105px;
+  background: url('social-icons-sprite.png') -315px 0;
+}
+
+#instagram a:hover {
+  background: url('social-icons-sprite.png') -315px -110px;
+}
+
+#bg { font-size: 30px;}
+
+</style>
+</head>
+<body>
+
+<h1> CSS Image Sprites </h1>
+<img src="wd1.jpg">
+<ul>
+<li id='bg'>An image sprite basically an image which is a collection of different images put together to form a single image. </li>
+<li id='bg'>A CSS sprite is a technique which is often used by web developers to optimize the performance of web pages.</li>
+<li id='bg'>In this technique, multiple smaller images usually of same dimensions are combined into a single big image called a sprite sheet or tile set.</li>
+<li id='bg'>Usually, elements like logos, navigation arrows, buttons are included in the sprite sheet as they are almost of the same dimensions and are frequently used in a web page.</li>
+<li id='bg'>A web page with many images can take a long time to load and generates multiple server requests.</li>
+<li id='bg'>Using image sprites will reduce the number of server requests and save bandwidth.</li>
+<li id='bg'>It reduce the bandwidth used to load multiple images. This way less data is consume.</li>
+<li id='bg'>Image sprites are generally used for designing a graphic social media bar or a navigation bar to make it more attractive and efficient at the same time. It is just a method in HTML and CSS to implement more efficient way of putting images and designing web pages.</li>
+</ul>
+
+<ul id="navlist">
+  <li id="facebook"><a href="https://www.facebook.com/"></a></li>
+  <li id="twitter"><a href="https://twitter.com/"></a></li>
+  <li id="youtube"><a href="https://www.youtube.com/"></a></li>
+  <li id="instagram"><a href="https://www.instagram.com/accounts/login/"></a></li>
+</ul>
+<br>
+
+
+</body>
+</html>
