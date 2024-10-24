@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  
+  let x = document.forms["addcustomer"]["account"].value;
+  if (x.length != 5 ) {
+    alert("Account number must be of 5 digit");
+    return false;
+  }
+ 
+}
+</script>
+</head>
+
+<body>
+<h3 style="background-color:#F5B7B1; text-align:center;">WD Practical Exam 12/04/2024</h3>
+<h2>Money Transfer</h2>
+<h3>
+<form name="transfer" action="transfer.php" onsubmit="return validateForm()" method="GET" >
+  
+  <label for="account">From account:</label>  
+  <input type="text" id="account" name="from_account" size="5" maxlength="5"><br><br>
+  
+  <label for="account"> To account:</label>  
+  <input type="text" id="account" name="to_account" size="5" maxlength="5"><br><br>
+  
+  <label for="amount"> Amount:</label>  
+  <input type="text" id="amount" name="amount" size="15" maxlength="15"><br><br>
+  
+  <input type="submit" value="Transfer">
+</form> </h3>
+<a href="index.html"><p> Home</p> </a> 
+</body>
+</html>
+
+
+
+  

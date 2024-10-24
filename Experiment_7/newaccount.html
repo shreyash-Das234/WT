@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  
+  let x = document.forms["addcustomer"]["account"].value;
+  if (x.length != 5 ) {
+    alert("Account number must be of 5 digit");
+    return false;
+  }
+  
+  
+  
+  if(document.getElementById('savings').checked == false && document.getElementById('current').checked == false)   {  
+    alert("Select account type");
+     return false;  
+  }
+  
+  
+  
+}
+</script>
+</head>
+
+<body>
+<h3 style="background-color:#F5B7B1; text-align:center;">WD Practical Exam 12/04/2024</h3>
+<h2>Add New Bank Account</h2>
+<h3>
+<form name="addcustomer" action="addnew.php" onsubmit="return validateForm()" method="GET" >
+  
+  <label for="account">Account Number:</label>  
+  <input type="text" id="account" name="account_number" size="5" maxlength="5"><br><br>
+
+  <label for="fname">First name:</label>  
+  <input type="text" id="fname" name="fname" size="15" maxlength="15"><br><br>
+  
+  <label for="lname">Last name:</label>  
+  <input type="text" id="lname" name="lname" size="15" maxlength="15"><br><br>
+  
+  <label for="m1">Mobile 1:</label>  
+  <input type="text" id="m1" name="mobile1" size="10" maxlength="10">
+  
+  <label for="m2">Mobile 2:</label>  
+  <input type="text" id="m2" name="mobile2" size="10" maxlength="10"><br><br>
+  
+  <label for="deposit">Opening Balance:</label>  
+  <input type="text" id="deposit" name="deposit_ini" size="10" maxlength="10"><br><br>
+
+  <label for="savings">Savings Account </label> 
+  <input type="radio" id="savings" name="ACtype" value="Savings">
+  <label for="current">Current Account</label> 
+  <input type="radio" id="current" name="ACtype" value="Current"><br><br>
+  
+  <input type="submit" value="Add">
+</form> </h3>
+<a href="index.html"><p> Home</p> </a> 
+</body>
+</html>
+
+
